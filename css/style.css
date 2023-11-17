@@ -26,6 +26,7 @@ figure{
 	overflow: hidden;
 }
 figure img{
+	width: 500px; height: 300px;
 	display: none;
  	position: absolute;
 }

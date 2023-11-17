@@ -1,23 +1,20 @@
 // 인디케이터 초기화
-var indicator = document.querySelectorAll('.indicator button');
-var lightbox = document.querySelector('#lightbox');
-var block = document.querySelector('#block');
+const indicator = document.querySelectorAll('.indicator button');
+const lightbox = document.getElementById('lightbox');
+const block = document.getElementById('block');
 
 // 라이트 박스 표시
 function lightbox_open(num) {
-    var lightbox1 = document.querySelector('#lightbox');
-    console.log(lightbox1);
-    lightbox1.setAttribute('class', 'active');
+    lightbox.setAttribute('class', 'active');
     block.setAttribute('class', 'active');
 
     change_img(num);
-    indicator[num-1].focuse();
+    indicator[num-1].focus();
 }
 
 // 라이트 박스 닫기
 function lightbox_close() {
-    var lightbox1 = document.querySelector('#lightbox');
-    lightbox1.removeAttribute('class');
+    lightbox.removeAttribute('class');
     block.removeAttribute('class');
 }
 
