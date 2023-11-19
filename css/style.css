@@ -2,6 +2,10 @@
 body{ padding: 20px; }
 h1,h2,h3,h4,p{ font-weight: normal; margin: 5px 0; }
 
+header img {
+	width: 200px; height: 100px;
+}
+
 /* 라이트박스 컨테이너 */
 #lightbox.active{
 	position: absolute; overflow: hidden;

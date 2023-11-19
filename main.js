@@ -45,5 +45,14 @@ $(function() {
         let img_num = $(this).index();
         change_img(img_num);
     });
+
+    // 연습문제
+    $('.changeImg').click(function() {
+        let lastImg = $('.img3').attr('src');
+        let firstImg = $('.img1').attr('src');
+        $('.img1').attr('src', lastImg);
+        $('.img3').attr('src', firstImg);
+    });
 });
+
 
